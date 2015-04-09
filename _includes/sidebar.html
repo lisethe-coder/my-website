@@ -1,0 +1,44 @@
+<nav>
+	
+	 <a href="/"> <img style="width: 90px; height: 90px; "src ="../assets/images/profile.png" </a>
+  	 
+  	 <h1>Hi.</h1>
+ 
+    {% if site.data.theme.social.gravatar %}
+    <img src="http://www.gravatar.com/avatar/{{ site.data.theme.social.gravatar }}?s=200" id="gravatar" alt="My photo"/>
+    {% else %}
+   
+    {% endif %}
+    
+  </a>
+  <h2>I'm <a href="/">{{ site.data.theme.name }}</a>.</h2> 
+  <div id="bio">
+    <p>  
+   		 I enjoy creating simple and awesome things that people love, using the power of programming and the beauty of technology.
+    </p>
+    
+    <p>
+    	<ul>
+    	
+    		<li> 
+    			<a href="../index.html">Home</a>
+    		</li>
+    		<li>
+    			<a href="http://uk.linkedin.com/in/lisethesanmartin">Experience</a>
+    		</li>
+    		<li>
+    			<a href="../projects.html">Projects</a>
+    		</li>
+    		<li>
+    			<a href="http://blog.lisethesmartin.me">Blog</a>
+    		</li>
+    		
+    	</ul>
+    	  
+    </p>
+    
+  </div>
+  <div id="social">
+    {% include social.html %}
+  </div>
+</nav>
